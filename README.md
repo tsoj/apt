@@ -2,7 +2,7 @@
 
 1. Download the song (you need to have yt-dlp and ffmpeg installed for this step):
 ```bash
-# Go into the directory in which `home_folder` lies (i.e. if you type `ls` this README.md and `home_folder` show up
+# Go into the directory in which `home_folder` lies (i.e. if you type `ls` this README.md and `home_folder` show up)
 yt-dlp --extract-audio --audio-format wav -o ./apt-sound-orig.wav "https://www.youtube.com/watch?v=wFeEbjLJDmI"
 mkdir -p ./home_folder/.local/share/sounds/
 ffmpeg -ss 6.7 -i ./apt-sound-orig.wav -acodec copy ./home_folder/.local/share/sounds/apt-sound.wav
